@@ -1,0 +1,79 @@
+.contenedeor{
+    width: 80%;
+    height: 500px;
+    position: relative;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    /* background-color: #E5E5E5; */
+    background-image: url(../img/scroll-bar.png);
+    border-radius: 5px;
+}
+ 
+/* The thumb itself */
+::-webkit-scrollbar-thumb {
+    /* background-color: rgba(0,0,0,0.75);  */
+    background-image: url(../img/scroll_thumb.png);
+    border-radius: 10px;
+    transition: opacity .2s ease-in-out;
+
+}
+
+
+/* Turn on single button up on top, and down on bottom */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+ 
+/* Turn off the down area up on top, and up area on bottom */
+::-webkit-scrollbar-button:start:increment,
+::-webkit-scrollbar-button:end:decrement {
+    display: none;
+}
+
+
+/* Place The scroll down button at the bottom */
+::-webkit-scrollbar-button:end:increment {
+    z-index: 10;
+    background-image: url(../img/scroll_dwn.png);
+    height: 14px;
+}
+ 
+/* Place The scroll up button at the up */
+::-webkit-scrollbar-button:start:decrement {
+    background-image: url(../img/scroll_up.png);
+    height: 14px;
+}
+
+
+
+.contenedeor .resultInforme2{
+  border: 1px solid green;
+  overflow-y: auto;
+  height: 3px;
+}
+
+.resultInforme2 thead{
+    background: #000;
+    /* position: relative; */
+}
+
+.resultInforme2 tr th{
+    padding: 5px;
+    color: #ffffff;
+    font-family: 'AkzidGrtskNext-Light';
+    text-align: center;
+}
+
+.resultInforme2 tbody{
+    background: rgb(219, 219, 219);
+    /* height: 30px;
+    overflow-y: auto; */
+}
+
